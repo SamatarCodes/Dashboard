@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.sidebar-dashboard::-webkit-scrollbar {
+    width: 8px;
+    background-color: #121212;
+}
+
+
+.sidebar-dashboard::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: #535353;
+}
+
+.content-dashboard::-webkit-scrollbar {
+    width: 8px;
+    background-color: #181818;
+}
+
+
+.content-dashboard::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: #535353;
+}
