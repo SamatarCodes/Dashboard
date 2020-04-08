@@ -13,8 +13,8 @@
     <div class="main-div flex overflow-y-hidden h-screen text-sm text-gray-400">
         <!-- sidebar -->
         <div
-            class=" flex flex-col left-section sidebar bg-gray-900-dashboard w-48 flex-none overflow-y-auto   font-semibold ">
-            <div class="flex items-center pt-5 mb-20  mx-4 ">
+            class=" flex flex-col justify-between left-section sidebar bg-gray-900-dashboard w-48 flex-none overflow-y-auto   font-semibold ">
+            <!-- <div class="flex items-center pt-5 mb-20  mx-4 ">
                 <svg class="w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                     <path
                         d="M470.779 285.404c-9.673-9.673-25.361-9.673-35.036 0l-54.962 54.962c.007-.595.023-1.188.023-1.785V57.806c0-13.682-11.092-24.774-24.774-24.774s-24.774 11.092-24.774 24.774v123.871h-49.548V24.774C281.707 11.092 270.615 0 256.933 0c-13.682 0-24.774 11.092-24.774 24.774v156.903H182.61V57.806c0-13.682-11.092-24.774-24.774-24.774s-24.774 11.092-24.774 24.774v123.871H83.513v-74.323c0-13.682-11.092-24.774-24.774-24.774s-24.774 11.092-24.774 24.774V338.58c0 95.624 77.794 173.42 173.419 173.42 47.457 0 90.52-19.167 121.864-50.161.469-.405.94-.806 1.386-1.255L470.778 320.44c9.676-9.676 9.676-25.36.001-35.036z"
@@ -26,8 +26,23 @@
                 <span>AWARE</span>
 
 
-            </div>
+            </div> -->
             <ul class="">
+                <li class=" mb-4 pt-5 border-l-4 border-transparent  py-3">
+                    <a href="#" class=" flex items-center mx-6  ">
+                        <svg class="w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path
+                                d="M470.779 285.404c-9.673-9.673-25.361-9.673-35.036 0l-54.962 54.962c.007-.595.023-1.188.023-1.785V57.806c0-13.682-11.092-24.774-24.774-24.774s-24.774 11.092-24.774 24.774v123.871h-49.548V24.774C281.707 11.092 270.615 0 256.933 0c-13.682 0-24.774 11.092-24.774 24.774v156.903H182.61V57.806c0-13.682-11.092-24.774-24.774-24.774s-24.774 11.092-24.774 24.774v123.871H83.513v-74.323c0-13.682-11.092-24.774-24.774-24.774s-24.774 11.092-24.774 24.774V338.58c0 95.624 77.794 173.42 173.419 173.42 47.457 0 90.52-19.167 121.864-50.161.469-.405.94-.806 1.386-1.255L470.778 320.44c9.676-9.676 9.676-25.36.001-35.036z"
+                                fill="#eeb784" />
+                            <path
+                                d="M470.779 285.404c-9.673-9.673-25.361-9.673-35.036 0l-54.962 54.962c.007-.595.023-1.188.023-1.785V57.806c0-13.682-11.092-24.774-24.774-24.774s-24.774 11.092-24.774 24.774v123.871h-49.548V24.774C281.707 11.092 270.615 0 256.933 0c-13.682 0-24.774 11.092-24.774 24.774v156.903h-24.774V512c47.457 0 90.52-19.167 121.864-50.161.469-.405.94-.806 1.386-1.255L470.779 320.44c9.675-9.676 9.675-25.36 0-35.036z"
+                                fill="#e68842" />
+                        </svg>
+
+
+                        <span class="ml-4 font-mono font-medium text-lg bg text-gray-400 ">Aware</span>
+                    </a>
+                </li>
                 <li
                     class=" border-l-4 border-transparent hover:bg-gray-hover-sidebar hover:border-gray-hover-light py-3">
                     <a href="#" class=" flex items-center mx-6  ">
@@ -128,12 +143,8 @@
                     </a>
                 </li>
             </ul>
-            <div class="flex items-center mx-auto flex-col justify-end bg-gray-300">
-                <div>
-                    <h4>Logout</h4>
-                </div>
-
-
+            <div class="text-center  py-5 border-t border-gray-900  ">
+                <button class="text-gray-600 font-medium font-mono text-sm hover:text-gray-400">Logout</button>
             </div>
 
         </div>
