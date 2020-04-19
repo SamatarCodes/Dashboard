@@ -23,3 +23,13 @@
     border-radius: 8px;
     background-color: #535353;
 }
+
+.hide {
+    display: none;
+}
+
+.show {
+
+    display: block;
+
+}

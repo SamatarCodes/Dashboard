@@ -14578,6 +14578,14 @@ video {
   background-color: #535353;
 }
 
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
 @media (min-width: 640px) {
   .sm\:sr-only {
     position: absolute;
