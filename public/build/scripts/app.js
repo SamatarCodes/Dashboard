@@ -1,8 +1,13 @@
 const dropdown = document.querySelector('#profile-menu');
+const contentSection = document.querySelector('.content-dashboard');
 
-document.querySelector('#profile').addEventListener('click', e => {
-
+window.addEventListener('click', (e) => {
+  console.log(e.target);
+  if (e.target === document.querySelector('.profile-image')) {
+    console.log('image');
     dropdown.classList.toggle('show');
-    //document.querySelector('#profile-menu').classList.toggle('hide');
-
-})
+  } else {
+    dropdown.classList.add('hide');
+    dropdown.classList.remove('show');
+  }
+});
