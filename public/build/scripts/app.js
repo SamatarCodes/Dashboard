@@ -1,6 +1,5 @@
 const profileImage = document.querySelector('.profile-image');
 const dropdown = document.querySelector('#profile-menu');
-const contentSection = document.querySelector('.content-dashboard');
 
 document.addEventListener('click', (e) => {
   // if element that was clicked on contained inside of dropdown
