@@ -1,7 +1,8 @@
 const profileImage = document.querySelector('.profile-image');
 const dropdown = document.querySelector('#profile-menu');
-const menuButton = document.querySelector('#menu-button');
+const menuButton = document.querySelector(' button #menu-button');
 const searchField = document.querySelector('#search');
+const sideBar = document.querySelector('#sidebar-menu');
 
 document.addEventListener('click', (e) => {
   // if profile image is clicked
@@ -15,6 +16,8 @@ document.addEventListener('click', (e) => {
   }
 
   if (e.target === menuButton) {
-    searchField.classList.toggle('show');
+    sideBar.classList.toggle('show');
+
+    console.log(e.target);
   }
 });
