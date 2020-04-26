@@ -10,24 +10,18 @@
 
 <body>
     <!-- both sections -->
+  
     <div class="flex h-screen overflow-y-hidden text-sm text-gray-400 main-div">
         <!-- sidebar -->
+        
+     
         <div
-            class="flex flex-col justify-between flex-none w-56 overflow-y-auto font-semibold left-section sidebar bg-dark-color-sidebar">
-            <!-- <div class="flex items-center pt-5 mx-4 mb-20 ">
-                <svg class="w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                    <path
-                        d="M470.779 285.404c-9.673-9.673-25.361-9.673-35.036 0l-54.962 54.962c.007-.595.023-1.188.023-1.785V57.806c0-13.682-11.092-24.774-24.774-24.774s-24.774 11.092-24.774 24.774v123.871h-49.548V24.774C281.707 11.092 270.615 0 256.933 0c-13.682 0-24.774 11.092-24.774 24.774v156.903H182.61V57.806c0-13.682-11.092-24.774-24.774-24.774s-24.774 11.092-24.774 24.774v123.871H83.513v-74.323c0-13.682-11.092-24.774-24.774-24.774s-24.774 11.092-24.774 24.774V338.58c0 95.624 77.794 173.42 173.419 173.42 47.457 0 90.52-19.167 121.864-50.161.469-.405.94-.806 1.386-1.255L470.778 320.44c9.676-9.676 9.676-25.36.001-35.036z"
-                        fill="#eeb784" />
-                    <path
-                        d="M470.779 285.404c-9.673-9.673-25.361-9.673-35.036 0l-54.962 54.962c.007-.595.023-1.188.023-1.785V57.806c0-13.682-11.092-24.774-24.774-24.774s-24.774 11.092-24.774 24.774v123.871h-49.548V24.774C281.707 11.092 270.615 0 256.933 0c-13.682 0-24.774 11.092-24.774 24.774v156.903h-24.774V512c47.457 0 90.52-19.167 121.864-50.161.469-.405.94-.806 1.386-1.255L470.779 320.44c9.675-9.676 9.675-25.36 0-35.036z"
-                        fill="#e68842" />
-                </svg>
-                <span>AWARE</span>
-
-
-            </div> -->
-            <ul class="">
+            class="sm:w-auto md:w-auto flex flex-col  flex-none w-56 overflow-y-auto font-semibold left-section sidebar bg-dark-color-sidebar">
+            
+           
+           
+            <!--THE MENU -->
+            <ul class="sm:hidden md:block ">
                 <li class="my-8 border-l-4 border-transparent bg">
                     <a href="#" class="flex items-center mx-6 ">
                         <svg class="w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -150,9 +144,20 @@
         </div>
 
         <!-- content section -->
+        
         <div class="flex-col flex-1 overflow-y-auto right-section content-dashboard bg-dark-color-content">
             <div class="flex items-center justify-between py-3 shadow-md profile-section ">
-                <div class="ml-4 search-bar">
+                 <!-- SVG BUTTON -->
+            <div  class=" sm:block md:hidden flex flex-col">
+                <button class="pl-2 bg-dark-color-content text-gray-500 focus:text-white focus:outline-none hover:text-white">
+                    
+                    <svg id="menu-button"  class=" w-6 h-6 fill-current " xmlns="http://www.w3.org/2000/svg"><path d="M2 5v2h20V5H2zm0 6v2h20v-2H2zm0 6v2h20v-2H2z"/></svg>
+                  
+                </button>
+                <!-- INPUT -->
+              
+            </div>
+                <div  class="sm:hidden md:block ml-4 search-bar">
 
                     <input type="text"
                         class="relative w-48 px-4 py-1 pl-8 mr-4 text-xs placeholder-gray-700 bg-transparent border border-transparent rounded focus:outline-none"
@@ -167,6 +172,7 @@
                     </div>
                 </div>
                 <div class="relative mr-8 image-section">
+                    <!-- PROFILE COMPONENTS -->
                     <button id="profile"
                         class="block w-8 h-8 overflow-hidden border-2 border-gray-600 rounded-full focus:outline-none focus:border-white">
                         <img class="profile-image object-cover w-full h-full" src="/public/img/sam.png" alt="profile pic">
